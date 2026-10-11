@@ -1,6 +1,6 @@
 """JSONL loading and conversion of dataset records into chat messages.
 
-Two record shapes are accepted (see PLAN.md section 3):
+Two record shapes are accepted (see docs/dataset-format.md):
 
 * chat:        {"messages": [{"role": ..., "content": ...}, ...]}
 * instruction: {"instruction": ..., "input": ... (optional), "output": ...}

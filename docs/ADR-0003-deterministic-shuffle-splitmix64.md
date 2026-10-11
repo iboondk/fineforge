@@ -6,7 +6,7 @@ Accepted.
 
 ## Context
 
-`fineforge shard` must produce byte-identical shards and eval split for the same input and seed (PLAN.md milestone M2). A general-purpose RNG crate can change its output between versions, and that would silently change every dataset split.
+`fineforge shard` must produce byte-identical shards and eval split for the same input and seed. A general-purpose RNG crate can change its output between versions, and that would silently change every dataset split.
 
 ## Decision
 

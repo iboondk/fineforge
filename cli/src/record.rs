@@ -1,10 +1,6 @@
-// Some helpers here (canonical_text, normalize, Message fields) are consumed by
-// later milestones (dedupe, shard), so they are not all referenced by main yet.
-#![allow(dead_code)]
-
 use serde_json::Value;
 
-/// One dataset record in either accepted shape (see PLAN.md section 3).
+/// One dataset record in either accepted shape (see docs/dataset-format.md).
 #[derive(Debug, Clone, PartialEq)]
 pub enum Record {
     Chat {
@@ -124,7 +120,7 @@ fn non_empty_str(v: &Value, field: &str) -> Result<String, String> {
     }
 }
 
-/// Canonical text used for dedupe hashing. Must stay stable (PLAN.md section 3).
+/// Canonical text used for dedupe hashing. Must stay stable (see docs/dataset-format.md).
 pub fn canonical_text(r: &Record) -> String {
     match r {
         Record::Chat { messages } => messages

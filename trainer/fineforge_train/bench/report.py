@@ -3,7 +3,7 @@
     python -m fineforge_train.bench.report [--results PATH] [--out results/benchmark.md]
 
 With no results file (or the file is missing) every metric cell reads ``TBD``, so the
-report never shows a number that was not measured (see PLAN.md section 6).
+report never shows a number that was not measured (see docs/benchmark-methodology.md).
 """
 
 from __future__ import annotations

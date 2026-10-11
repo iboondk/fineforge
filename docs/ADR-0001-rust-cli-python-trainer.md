@@ -6,13 +6,13 @@ Accepted.
 
 ## Context
 
-FineForge has two jobs with different needs. Dataset work (validate, dedupe, shard) streams large JSONL files and should be fast and ship as one binary. Training and benchmarking need the Hugging Face stack (`torch`, `transformers`, `peft`, `trl`), which only exists in Python and runs on a Colab GPU.
+FineForge does two kinds of work with different needs. Dataset work (validate, dedupe, shard) streams large JSONL files and should be fast and ship as one binary. Training and benchmarking need the Hugging Face stack (`torch`, `transformers`, `peft`, `trl`), which only exists in Python and runs on a Colab GPU.
 
 ## Decision
 
 - `cli/` is a Rust crate named `fineforge` (clap 4, serde_json, sha2, anyhow). It owns `validate`, `dedupe`, `shard` and the `gguf` wrapper.
 - `trainer/` is a Python package named `fineforge_train`. It owns LoRA/QLoRA training, merging and the base-vs-tuned benchmark.
-- The two halves share only the dataset contract (PLAN.md section 3) and files on disk. Neither calls the other's code.
+- The two halves share only the dataset contract (docs/dataset-format.md) and files on disk. Neither calls the other's code.
 
 ## Consequences
 

@@ -33,7 +33,7 @@ Each line of a JSONL file is one of two shapes:
 - **chat**: `{"messages": [{"role": "system" | "user" | "assistant", "content": "..."}, ...]}`. There must be at least two messages, at least one `user`, the last message must be `assistant`, and `system` may appear only at index 0.
 - **instruction**: `{"instruction": "...", "input": "...", "output": "..."}`. `input` is optional. `instruction` and `output` must be non-empty strings.
 
-Extra top-level keys such as `id` or `source` are kept as they are. The full contract is in [PLAN.md](PLAN.md#3-dataset-contract-jsonl-utf-8-one-object-per-line).
+Extra top-level keys such as `id` or `source` are kept as they are. The full contract is in [docs/dataset-format.md](docs/dataset-format.md).
 
 ## Quick start
 
@@ -113,7 +113,7 @@ The target is an approximately 26% relative improvement. It has not been measure
 ## Write-up and decisions
 
 - [WRITEUP.md](WRITEUP.md): the problem, the architecture, the key decisions, the current results and next steps.
-- [docs/](docs/): architecture decision records (ADR-0001 to ADR-0005).
+- [docs/](docs/): architecture decision records (ADR-0001 to ADR-0005), the [dataset format](docs/dataset-format.md) and the [benchmark methodology](docs/benchmark-methodology.md).
 
 ## Repository layout
 
@@ -124,7 +124,7 @@ data/sample/          Small synthetic sample dataset
 scripts/              Sample-data generator and notebook builder, with tests
 notebooks/            Generated Colab notebook
 results/              Benchmark report (TBD until measured)
-docs/                 ADRs
+docs/                 ADRs, dataset format, benchmark methodology
 .github/workflows/    CI: Rust tests and Python tests
 ```
 

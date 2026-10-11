@@ -77,7 +77,7 @@ cat results/benchmark.md
 
 ## Closing card (1:30 to 1:35)
 
-- Show the repository URL (replace the placeholder with the real one before publishing) and the line "MIT licensed".
+- Show the repository URL `https://github.com/iboondk/fineforge` and the line "MIT licensed".
 
 ## Recording tips
 

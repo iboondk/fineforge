@@ -41,7 +41,7 @@ def results_record(
     base_scores: dict,
     tuned_scores: dict,
 ) -> dict:
-    """Build the JSON-serialisable results record described in PLAN.md section 6."""
+    """Build the JSON-serialisable results record described in docs/benchmark-methodology.md."""
     if base_scores["n"] != tuned_scores["n"]:
         raise ValueError("base and tuned scores were computed on different sample counts")
     return {
@@ -110,7 +110,7 @@ def _build_parser() -> argparse.ArgumentParser:
     )
     parser.add_argument("--base-model", default=DEFAULT_BASE_MODEL, help="base model id or local path")
     parser.add_argument("--adapter", help="PEFT adapter directory (required unless --dry-run)")
-    parser.add_argument("--eval-file", required=True, help="JSONL eval file (see PLAN.md section 3)")
+    parser.add_argument("--eval-file", required=True, help="JSONL eval file (see docs/dataset-format.md)")
     parser.add_argument("--out", default="results/results.json", help="output JSON path")
     parser.add_argument("--limit", type=int, default=None, help="score only the first N records")
     parser.add_argument("--max-new-tokens", type=int, default=256)

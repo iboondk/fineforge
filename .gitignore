@@ -16,3 +16,6 @@ vendor/
 .terraform/
 *.tfstate
 *.tfstate.backup
+
+
+.tmp/
