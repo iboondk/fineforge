@@ -5,7 +5,7 @@
 
 Every record is built from templates and a small hard-coded table, so the output is a
 pure function of (--n, --seed): running twice with the same arguments writes
-byte-identical files. Records use the two shapes from PLAN.md section 3 (instruction
+byte-identical files. Records use the two shapes from docs/dataset-format.md (instruction
 and chat) and carry ``"source": "synthetic-fineforge-sample"``.
 
 About 5% of the lines are case or whitespace variants of other records, so that

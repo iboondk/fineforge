@@ -49,7 +49,7 @@ does not ship measured results. `results/benchmark.md` shows `TBD` until you run
 benchmark cells yourself, and the headline is a target, not a result.
 
 The sample data is **synthetic** (templated toy records). Replace it with your own
-dataset in the shape described in `PLAN.md` section 3.""",
+dataset in the shape described in `docs/dataset-format.md`.""",
     ),
     _md("gpu-header", "## 1. Check the GPU"),
     _code("nvidia-smi", "!nvidia-smi"),
@@ -78,7 +78,7 @@ os.environ["PATH"] = os.path.expanduser("~/.cargo/bin") + ":" + os.environ["PATH
     _md("data-header", "## 4. Data: sample or your own"),
     _code(
         "make-sample",
-        """# Replace with your own dataset: write JSONL in the PLAN.md section 3 shape and
+        """# Replace with your own dataset: write JSONL in the docs/dataset-format.md shape and
 # point RAW at it. The sample generator writes synthetic toy records only.
 RAW = "data/sample/sample.jsonl"
 !python scripts/make_sample_data.py --out $RAW""",

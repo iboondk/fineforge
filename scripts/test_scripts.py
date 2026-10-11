@@ -37,7 +37,7 @@ def _normalized_canonical(obj: dict) -> str:
 
 
 def _check_shape(obj: dict) -> None:
-    """Assert one record matches the PLAN.md section 3 contract."""
+    """Assert one record matches the dataset contract in docs/dataset-format.md."""
     assert obj.get("source") == "synthetic-fineforge-sample"
     if "messages" in obj:
         msgs = obj["messages"]
