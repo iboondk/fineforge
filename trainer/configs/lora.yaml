@@ -1,0 +1,4 @@
+train_files: ["../data/out/train-*.jsonl"]
+eval_file: "../data/out/eval.jsonl"
+method: lora
+output_dir: runs/lora

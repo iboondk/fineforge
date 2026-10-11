@@ -1,0 +1,8 @@
+{"messages":[{"role":"user","content":"What is the capital of France?"},{"role":"assistant","content":"Paris."}]}
+{"messages":[{"role":"user","content":"  what is the CAPITAL of france?  "},{"role":"assistant","content":"paris.  "}]}
+{"instruction":"Translate to French.","input":"Good morning","output":"Bonjour"}
+{"instruction":"Summarize the following research paragraph in two short sentences while keeping every key number, the name of the method, the measured outcome, and the main limitation the authors mention clearly visible for a general reader today.","input":"The team tested a sparse attention method on long documents and measured a 26 percent speedup with no loss in accuracy.","output":"A sparse attention method gave a 26 percent speedup without hurting accuracy, though the authors note it was only tested on long documents."}
+{"instruction":"Summarize this following research paragraph in two short sentences while keeping every key number, the name of the method, the measured outcome, and the main limitation the authors mention clearly visible for a general reader today.","input":"The team tested a sparse attention method on long documents and measured a 26 percent speedup with no loss in accuracy.","output":"A sparse attention method gave a 26 percent speedup without hurting accuracy, though the authors note it was only tested on long documents."}
+{"instruction":"Name a primary color.","output":"Red","id":"color-1"}
+{"instruction":"  TRANSLATE to   French. ","input":"good MORNING","output":"Bonjour "}
+{"instruction":"x","output":""}

@@ -1,0 +1,18 @@
+target/
+runs/
+data/out/
+*.gguf
+__pycache__/
+.venv/
+*.egg-info/
+.pytest_cache/
+.env
+.DS_Store
+._*
+
+# Dependencies and infrastructure state
+node_modules/
+vendor/
+.terraform/
+*.tfstate
+*.tfstate.backup

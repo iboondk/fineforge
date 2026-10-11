@@ -1,0 +1,4 @@
+{"messages":[{"role":"system","content":"You are a helpful assistant."},{"role":"user","content":"What is the capital of France?"},{"role":"assistant","content":"Paris."}]}
+{"messages":[{"role":"user","content":"What is 2 + 2?"},{"role":"assistant","content":"4"}],"id":"chat-2"}
+{"instruction":"Translate to French.","input":"Good morning","output":"Bonjour","source":"toy"}
+{"instruction":"Name a primary color.","output":"Red"}

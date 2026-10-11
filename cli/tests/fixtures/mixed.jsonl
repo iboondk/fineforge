@@ -1,0 +1,6 @@
+{"messages":[{"role":"user","content":"Hi"},{"role":"assistant","content":"Hello!"}]}
+{"instruction":"Summarize in one word.","input":"The sky is blue.","output":"Sky"}
+{"messages":[{"role":"system","content":"Be brief."},{"role":"user","content":"Ping"},{"role":"assistant","content":"Pong"}]}
+{"messages":[{"role":"user","content":"Hi"},{"role":"assistant","content":"Hello!"},{"role":"user","content":"Again"}]}
+{"instruction":"Say hi.","input":"","output":"   "}
+{"messages": [{"role":"user","content":"Unclosed

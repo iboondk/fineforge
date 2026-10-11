@@ -1,0 +1,20 @@
+[package]
+name = "fineforge"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+authors = ["iboondk"]
+description = "Validate, dedupe and shard JSONL datasets for LLM fine-tuning"
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+anyhow = "1"
+sha2 = "0.10"
+hex = "0.4"
+
+[dev-dependencies]
+assert_cmd = "2"
+predicates = "3"
+tempfile = "3"
